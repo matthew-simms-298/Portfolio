@@ -1,29 +1,15 @@
 import Image from 'next/image'
-import HeaderComponent from './components/Header'
+import ProjectHighlights from '@/app/components/ProjectHighlights'
+import TechStack from '@/app/components/TechStack'
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-red-500 p-5">
-      <div className='h-80 w-full mb-20'>
+    <main className="min-h-screen bg-base-200 p-5 text-base-content flex flex-col items-center">
+      <div className='text-base-200 h-80 w-full mb-20 hover:text-white'>
         Surprise! It's me the dummy div!
       </div>
       
-
-      <div className="card card-side bg-blue-500 shadow-xl m-5">
-        <figure><Image src="/profile pic.jpg" alt="Capstone Project" width={250} height={250}/></figure>
-        <div className="card-body">
-          <h2 className="card-title">Title</h2>
-          <p>Body content</p>
-        </div> 
-      </div>
-      <div className="card card-side bg-blue-500 shadow-xl m-5">
-        <div className="card-body">
-          <h2 className="card-title">Title</h2>
-          <p>Body content</p>
-        </div>
-        <figure><Image src="/profile pic.jpg" alt="Capstone Project" width={250} height={250}/></figure>
-
-      </div>
+      <ProjectHighlights/>
     </main>
   )
 }

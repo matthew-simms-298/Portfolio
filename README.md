@@ -7,3 +7,5 @@
 # Components lists
 
 - Header
+- ProjectHighlights
+- TechStack

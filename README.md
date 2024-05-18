@@ -7,5 +7,3 @@
 # Components lists
 
 - Header
-- Projects
-- Resume

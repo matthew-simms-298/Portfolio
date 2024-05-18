@@ -15,6 +15,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("daisyui"), require("tailwindcss")
+  ],
+  daisyui: {
+    themes: ["luxury"]
+  }
 }
 export default config

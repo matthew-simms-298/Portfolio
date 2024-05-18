@@ -11,8 +11,8 @@ export default function HeaderComponent() {
                     <a className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg">Portfolio</a>
                     <a className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg" >GitHub</a>
                     <a className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg">About Me</a>
-                    <div className="flex flex-col text-center items-center mt-32">
-                        <h1 className="text-3xl font-bold my-5">Matthew Simms</h1>
+                    <div className="flex flex-col text-center items-center mt-28">
+                        <h1 className="text-4xl font-bold mt-10 mb-5">Matthew Simms</h1>
                         <Image className="rounded-full" src="/profile pic.jpg" alt="Matthew Simms" width={250} height={250}/>
                     </div>                
                     <a className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg">Education</a>

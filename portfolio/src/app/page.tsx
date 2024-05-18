@@ -9,14 +9,14 @@ export default function Home() {
       </div>
       
 
-      <div className="card card-side bg-yellow-500 shadow-xl m-5">
+      <div className="card card-side bg-blue-500 shadow-xl m-5">
         <figure><Image src="/profile pic.jpg" alt="Capstone Project" width={250} height={250}/></figure>
         <div className="card-body">
           <h2 className="card-title">Title</h2>
           <p>Body content</p>
         </div> 
       </div>
-      <div className="card card-side bg-yellow-500 shadow-xl m-5">
+      <div className="card card-side bg-blue-500 shadow-xl m-5">
         <div className="card-body">
           <h2 className="card-title">Title</h2>
           <p>Body content</p>

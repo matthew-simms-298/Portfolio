@@ -1,5 +1,5 @@
 'use client'
-import ProjectHighlights from '@/app/components/ProjectHighlights'
+import Projects from '@/app/components/Projects'
 import TechStack from '@/app/components/TechStack'
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
         Surprise! It's me the dummy div!
       </div>
 
-      <ProjectHighlights/>
+      <Projects/>
     </main>
   )
 }

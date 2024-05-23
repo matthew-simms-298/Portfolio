@@ -9,7 +9,7 @@ export default function TechStack() {
       <div className="flex flex-row items-center justify-center mt-5 flex-wrap">
         <a href="https://tailwindcss.com" target="_blank">
           <Image
-            className="rounded-lg m-5 hover:scale-150 hover:transition"
+            className="rounded-lg m-5 hover:scale-150 transition duration-300"
             src="/tailwindcss-logo.png"
             alt="TailwindCSS Logo"
             height={100}
@@ -18,7 +18,7 @@ export default function TechStack() {
         </a>
         <a href="https://daisyui.com" target="_blank">
           <Image
-            className="rounded-lg m-5 hover:scale-150 hover:transition"
+            className="rounded-lg m-5 hover:scale-150 transition duration-300"
             src="/daisyui-logo.jpg"
             alt="DaisyUI Logo"
             height={100}
@@ -27,7 +27,7 @@ export default function TechStack() {
         </a>
         <a href="https://react.dev" target="_blank">
           <Image
-            className="rounded-lg m-5 hover:scale-150 hover:transition"
+            className="rounded-lg m-5 hover:scale-150 transition duration-300"
             src="/react-logo.png"
             alt="React logo"
             height={100}
@@ -36,7 +36,7 @@ export default function TechStack() {
         </a>
         <a href="https://nextjs.org" target="_blank">
           <Image
-            className="rounded-lg m-5 hover:scale-150 hover:transition"
+            className="rounded-lg m-5 hover:scale-150 transition duration-300"
             src="/nextjs-logo.png"
             alt="Next.JS Logo"
             height={100}
@@ -45,7 +45,7 @@ export default function TechStack() {
         </a>
         <a href="https://vercel.com" target="_blank">
           <Image
-            className="rounded-lg m-5 hover:scale-150 hover:transition"
+            className="rounded-lg m-5 hover:scale-150 transition duration-300"
             src="/vercel-logo.png"
             alt="Vercel Logo"
             height={100}
@@ -54,7 +54,7 @@ export default function TechStack() {
         </a>
         <a href="https://www.typescriptlang.org" target="_blank">
           <Image
-            className="rounded-lg m-5 hover:scale-150 hover:transition"
+            className="rounded-lg m-5 hover:scale-150 transition duration-300"
             src="/typescript.png"
             alt="Typescript Logo"
             height={100}

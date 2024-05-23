@@ -2,7 +2,7 @@
 import Image from "next/image";
 export default function TechStack() {
   return (
-    <div className="flex flex-col items-center mt-20">
+    <div className="flex flex-col items-center mt-20 text-center">
       <h2 className="text-4xl italic font-serif font-thin mb-5">
         Current Tech Stack
       </h2>

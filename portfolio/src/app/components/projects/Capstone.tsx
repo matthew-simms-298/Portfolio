@@ -8,7 +8,7 @@ export default function Capstone() {
         <Image
           width={500}
           height={500}
-          src="/JAWN-logos.jpeg"
+          src="/JAWN-logo.jpeg"
           alt="Capstone Project"
         />
       </figure>

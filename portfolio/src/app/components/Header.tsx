@@ -7,10 +7,10 @@ export default function HeaderComponent() {
   return (
     <header className="text-primary bg-base-200 h-96 flex flex-col items-center w-full z-10">
       <div className="flex flex-row items-center justify-evenly bg-base-100 w-full h-1/2 shadow-2xl shadow-base-300">
-        <a className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg">
+        <a href="/Matthew Simms - Resume.pdf" className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg" download="matthew_simms_resume">
           Resume
         </a>
-        <a className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg">
+        <a href="https://www.sait.ca/programs-and-courses/diplomas/software-development" target="_blank" className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg">
           Education
         </a>
         <div className="flex flex-col text-center items-center mt-56 w-1/2 lg:w-1/3 ">

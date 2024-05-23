@@ -18,8 +18,8 @@ export default function Capstone() {
         </h2>
         <h2 className="card-title text-md md:card-title sm:hidden">SDS</h2>
         <p className="text-sm md:text-base">
-          The <a className="italic">{'"Schedule Distribution System"'}</a> or SDS
-          for short, was our capstone project. The idea was to give small
+          The <a className="italic">{'"Schedule Distribution System"'}</a> or
+          SDS for short, was our Capstone project. The idea was to give small
           businesses as well as large corporations a more efficient method of
           schedule distribution. Keeping all employees updated on the latest
           changes.
@@ -27,14 +27,14 @@ export default function Capstone() {
         <div className="justify-center card-actions mt-5 sm:justify-end">
           <a
             href="https://jawn-sds.vercel.app/api/auth/signin"
-            target="blank"
+            target="_blank"
             className="btn btn-outline mx-2 w-28"
           >
             Live Demo
           </a>
           <a
             href="https://linktr.ee/jawn_ca"
-            target="blank"
+            target="_blank"
             className="btn btn-outline mx-2 w-28"
           >
             Creators

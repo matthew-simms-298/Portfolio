@@ -17,7 +17,7 @@ export default function HeaderComponent() {
           <h1 className="text-3xl italic font-serif mt-5">Matthew Simms</h1>
           <Image
             className="rounded-full mt-2"
-            src="/profile pic.jpg"
+            src="/images/profile pic.jpg"
             alt="Matthew Simms"
             width={250}
             height={250}

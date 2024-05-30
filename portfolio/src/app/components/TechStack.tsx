@@ -10,7 +10,7 @@ export default function TechStack() {
         <a href="https://tailwindcss.com" target="_blank">
           <Image
             className="rounded-lg m-5 hover:scale-150 transition duration-300"
-            src="/tailwindcss-logo.png"
+            src="/images/tailwindcss-logo.png"
             alt="TailwindCSS Logo"
             height={100}
             width={100}
@@ -19,7 +19,7 @@ export default function TechStack() {
         <a href="https://daisyui.com" target="_blank">
           <Image
             className="rounded-lg m-5 hover:scale-150 transition duration-300"
-            src="/daisyui-logo.jpg"
+            src="/images/daisyui-logo.jpg"
             alt="DaisyUI Logo"
             height={100}
             width={100}
@@ -28,7 +28,7 @@ export default function TechStack() {
         <a href="https://react.dev" target="_blank">
           <Image
             className="rounded-lg m-5 hover:scale-150 transition duration-300"
-            src="/react-logo.png"
+            src="/images/react-logo.png"
             alt="React logo"
             height={100}
             width={100}
@@ -37,7 +37,7 @@ export default function TechStack() {
         <a href="https://nextjs.org" target="_blank">
           <Image
             className="rounded-lg m-5 hover:scale-150 transition duration-300"
-            src="/nextjs-logo.png"
+            src="/images/nextjs-logo.png"
             alt="Next.JS Logo"
             height={100}
             width={100}
@@ -46,7 +46,7 @@ export default function TechStack() {
         <a href="https://vercel.com" target="_blank">
           <Image
             className="rounded-lg m-5 hover:scale-150 transition duration-300"
-            src="/vercel-logo.png"
+            src="/images/vercel-logo.png"
             alt="Vercel Logo"
             height={100}
             width={100}
@@ -55,7 +55,7 @@ export default function TechStack() {
         <a href="https://www.typescriptlang.org" target="_blank">
           <Image
             className="rounded-lg m-5 hover:scale-150 transition duration-300"
-            src="/typescript.png"
+            src="/images/typescript.png"
             alt="Typescript Logo"
             height={100}
             width={100}

@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 import React from "react";
+import DropDown from "./DropDown";
 
 export default function HeaderComponent() {
   return (
     <header className="text-primary bg-base-200 h-96 flex flex-col items-center w-full z-10">
       <div className="flex flex-row items-center justify-evenly bg-base-100 w-full h-1/2 shadow-2xl shadow-base-300">
+      <DropDown/>
         <a href="/Matthew Simms - Resume.pdf" className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg" download="matthew_simms_resume">
           Resume
         </a>

@@ -8,7 +8,7 @@ export default function ProjectHighlights() {
       <h2 className="text-4xl italic font-serif font-thin mb-5">Projects</h2>
       <div className="flex flex-col items-center">
         <Capstone />
-        {/*<TecTOC/>*/}
+        <TecTOC/>
       </div>
 
       <p className="text-center italic font-light mt-24">

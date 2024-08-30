@@ -4,7 +4,7 @@ export default function TechStack() {
   return (
     <div className="flex flex-col items-center mt-20 text-center">
       <h2 className="text-4xl italic font-serif font-thin mb-5">
-        Current Tech Stack
+        This Website's Tech Stack
       </h2>
       <div className="flex flex-row items-center justify-center mt-5 flex-wrap">
         <a href="https://tailwindcss.com" target="_blank">
@@ -60,13 +60,6 @@ export default function TechStack() {
             height={100}
             width={100}
           />
-          {/*<Image
-          className="rounded-lg mx-5 hover:scale-150 hover:transition"
-          src="/javascript.png"
-          alt="Javacript Logo"
-          height={100}
-          width={100}
-  />*/}
         </a>
       </div>
     </div>

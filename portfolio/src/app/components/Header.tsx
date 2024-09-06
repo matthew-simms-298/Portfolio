@@ -15,10 +15,10 @@ export default function HeaderComponent() {
         <a href="https://www.sait.ca/programs-and-courses/diplomas/software-development" target="_blank" className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg">
           Education
         </a>
-        <div className="flex flex-col text-center items-center mt-56 w-1/2 lg:w-1/3 ">
-          <h1 className="text-3xl italic font-serif mt-5">Matthew Simms</h1>
+        <div className="flex flex-col text-center items-center mt-52 w-1/2 lg:w-1/3 ">
+          <h1 className="text-3xl italic font-serif py-3">Matthew Simms</h1>
           <Image
-            className="rounded-full mt-2"
+            className="rounded-full"
             src="/images/profile pic.jpg"
             alt="Matthew Simms"
             width={250}

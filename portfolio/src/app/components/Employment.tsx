@@ -16,18 +16,25 @@ export default function Employment() {
       </h2>
 
       <div>
-        <div className="flex flex-row justify-between pt-3">
-          <h3 className=" text-lg font-bold">Front-End Web Developer</h3>
-          <h3 className=" text-lg font-bold">January 2024 - present</h3>
+        <div className="flex flex-row justify-between pt-3 font-serif font-thin text-xl">
+          <h3>Front-End Web Developer</h3>
+          <h3>January 2024 - present</h3>
         </div>
         <p className="italic">
-          <a className="underline" href="https://www.tightoilconsortium.com/" target="_blank">
+          <a
+            className="underline"
+            href="https://www.tightoilconsortium.com/"
+            target="_blank"
+          >
             Tight Oil Consortium
           </a>
-          , within their tech branch known as <a className="underline" href="https://www.tectoc.ca" target="_blank">TecTOC</a>
+          , within their tech branch known as{" "}
+          <a className="underline" href="https://www.tectoc.ca" target="_blank">
+            TecTOC
+          </a>
         </p>
 
-        <ul className="list-disc ml-10">
+        <ul className="list-disc ml-5 mt-3">
           {TecTOC.map((contents, index) => (
             <li className="py-1" key={index}>
               {contents}

@@ -10,7 +10,7 @@ export default function Employment() {
     "Connected with stakeholders to collaborate and create accurate and concise use cases for future development and creation leading up to the final product.",
   ];
   return (
-    <div className="py-5 w-1/2">
+    <div className="py-5 w-1/2 mt-20">
       <h2 className="text-4xl italic font-serif font-thin mb-5 text-center">
         Employment and Experience
       </h2>

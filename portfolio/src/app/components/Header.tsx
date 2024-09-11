@@ -12,7 +12,7 @@ export default function HeaderComponent() {
         <a href="/Matthew Simms - Resume.pdf" className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg" download="matthew_simms_resume">
           Resume
         </a>
-        <a href="https://www.sait.ca/programs-and-courses/diplomas/software-development" target="_blank" className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg">
+        <a href="#Education" target="_blank" className="btn btn-link btn-md hidden mt-32 sm:flex lg:btn-lg">
           Education
         </a>
         <div className="flex flex-col text-center items-center mt-52 w-1/2 lg:w-1/3 ">

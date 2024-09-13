@@ -30,10 +30,10 @@ export default function Skills() {
   ];
 
   return (
-    <div className="w-2/3 items-center text-center mt-20">
+    <div id="skills" className="w-3/4 items-center text-center mt-20">
       <h2 className="text-4xl italic font-serif font-thin">Skills</h2>
       <div className="flex flex-col lg:flex-row items-center lg:justify-between lg:items-start m-3">
-        <div className="border rounded-lg border-base-content bg-base-100 w-full lg:w-1/3 p-2 m-3">
+        <div className="border rounded-lg border-base-content bg-base-100 w-full lg:w-1/3 p-2 m-3 shadow-xl hover:scale-110 transition duration-700">
           <h2 className="underline font-serif text-xl">Web Development</h2>
           {webDevelopment.map((content, index) => (
             <div className="flex flex-row justify-between px-3 ">
@@ -46,7 +46,7 @@ export default function Skills() {
             </div>
           ))}
         </div>
-        <div className="border rounded-lg border-base-content bg-base-100 w-full lg:w-1/3 p-2 m-3">
+        <div className="border rounded-lg border-base-content bg-base-100 w-full lg:w-1/3 p-2 m-3 shadow-xl hover:scale-110 transition duration-700">
           <h2 className="underline font-serif text-xl">
             Programming Languages
           </h2>
@@ -62,7 +62,7 @@ export default function Skills() {
           ))}
         </div>
 
-        <div className="border rounded-lg border-base-content bg-base-100 w-full lg:w-1/3 p-2 m-3">
+        <div className="border rounded-lg border-base-content bg-base-100 w-full lg:w-1/3 p-2 m-3 shadow-xl hover:scale-110 transition duration-700">
           <h2 className="underline font-serif text-xl">
             External technologies
           </h2>

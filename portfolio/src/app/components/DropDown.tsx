@@ -5,7 +5,7 @@ import Contents from "@/app/components/dropdown/DropDownContents";
 
 export default function DropDown() {
   return (
-    <details className="dropdown z-30 fixed top-5 left-5 sm:hidden">
+    <details className="dropdown z-30 fixed top-5 left-5 md:hidden">
       <Button/>
       <Contents/>
     </details>

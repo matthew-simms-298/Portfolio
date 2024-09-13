@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 export default function Home() {
   return (
-    <main className="min-h-screen bg-base-200 p-5 text-base-content flex flex-col items-center">
+    <main className="min-h-screen bg-base-200 p-5 text-base-content flex flex-col items-center scroll-smooth">
       <Skills/>
       <Employment/>
       <Education/>

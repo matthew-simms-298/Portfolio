@@ -4,7 +4,7 @@ import TecTOC from "@/app/components/projects/TecTOC";
 
 export default function ProjectHighlights() {
   return (
-    <main className="flex flex-col items-center w-3/4 mt-20">
+    <main id="projects" className="flex flex-col items-center w-3/4 mt-20">
       <h2 className="text-4xl italic font-serif font-thin mb-5">Projects</h2>
       <div className="flex flex-col items-center">
         <Capstone />

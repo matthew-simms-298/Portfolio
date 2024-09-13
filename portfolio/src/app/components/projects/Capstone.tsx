@@ -4,7 +4,7 @@ import TechStack from "../TechStack";
 
 export default function Capstone() {
   return (
-    <div className="card sm:card-side bg-base-100 shadow-xl m-5 w-full">
+    <div className="card sm:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
       <figure>
         <Image
           width={500}
@@ -18,7 +18,7 @@ export default function Capstone() {
           Schedule Distribution System (SDS)
         </h2>
         <h2 className="card-title text-md md:card-title sm:hidden">SDS</h2>
-        <p className="text-sm md:text-base">
+        <p className="text-sm md:text-base ">
           The <a className="italic">{'"Schedule Distribution System"'}</a> or
           SDS for short, was our Capstone project. The idea was to give small
           businesses as well as large corporations a more efficient method of

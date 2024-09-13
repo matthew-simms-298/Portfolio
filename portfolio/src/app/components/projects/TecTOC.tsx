@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function TecTOC() {
   return (
-    <div className="card sm:card-side bg-base-100 shadow-xl m-5 w-full">
+    <div className="card sm:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
       <figure className="bg-white w-full sm:w-2/5">
         <Image
-          src="/tecTOC_logo.png"
+          src="/images/TecTOC-logo.png"
           alt="TecTOC logo"
           width={500}
           height={500}

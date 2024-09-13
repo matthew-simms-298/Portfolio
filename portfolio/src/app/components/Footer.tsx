@@ -4,9 +4,11 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-row bg-base-100 just p-7 justify-between items-center">
-      <p className="">Give me a shout!</p>
+    <footer id="contact" className="flex flex-row bg-base-100 just p-7 justify-between items-center">
+      <p className="w-1/3">Give me a shout!</p>
+
       <div className="flex flex-row flex-wrap items-center">
+      <button className="mx-1 hover:text-base-content transition duration-500" onClick={() => {navigator.clipboard.writeText("(403) 397-1277")}}>(403) 397-1277</button>
         <a href="https://github.com" target="_blank">
           <svg
             className="fill-white mx-1 hover:fill-base-content transition duration-500"

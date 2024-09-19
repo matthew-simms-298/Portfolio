@@ -36,7 +36,7 @@ export default function Skills() {
         <div className="border rounded-lg border-base-content bg-base-100 w-full lg:w-1/3 p-2 m-3 shadow-xl hover:scale-110 transition duration-700">
           <h2 className="underline font-serif text-xl">Web Development</h2>
           {webDevelopment.map((content, index) => (
-            <div className="flex flex-row justify-between px-2 text-sm lg:text-lg">
+            <div  key={index} className="flex flex-row justify-between px-2 text-sm lg:text-lg">
             <p className="py-2 text-white text-left" key={index}>
               {content[0]}
             </p>
@@ -51,7 +51,7 @@ export default function Skills() {
             Programming Languages
           </h2>
           {programming.map((content, index) => (
-            <div className="flex flex-row justify-between px-2 text-sm lg:text-lg">
+            <div key={index} className="flex flex-row justify-between px-2 text-sm lg:text-lg">
             <p className="py-2 text-white text-left" key={index}>
               {content[0]}
             </p>
@@ -68,7 +68,7 @@ export default function Skills() {
           </h2>
 
           {externalTech.map((content, index) => (
-            <div className="flex flex-row justify-between px-2 text-sm lg:text-lg">
+            <div  key={index} className="flex flex-row justify-between px-2 text-sm lg:text-lg">
               <p className="py-2 text-white text-left" key={index}>
                 {content[0]}
               </p>

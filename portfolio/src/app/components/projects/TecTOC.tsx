@@ -3,37 +3,71 @@ import Image from "next/image";
 
 export default function TecTOC() {
   return (
-    <div className="card sm:card-side bg-base-100 shadow-xl m-5 w-full">
-      <figure className="bg-white w-full sm:w-2/5">
-        <Image
-          src="/tecTOC_logo.png"
+    <div className="card xl:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
+      <figure className="lg:w-1/4">
+        <img
+          src="/images/tectoc.png"
           alt="TecTOC logo"
-          width={500}
-          height={500}
         />
       </figure>
-      <div className="card-body">
+      <div className="card-body lg:w-3/4">
         <h2 className="card-title">TecTOC Advertisment Page</h2>
         <p>
           TecTOC was a website dedicated to providing insight to potential
           consumers of our future application which allowed the validated
           licensed user to access our data and analytics program.
         </p>
-        <div className="justify-center card-actions mt-5 sm:justify-end">
+        
+        <div className="card-actions items-center justify-center md:justify-between">
+        <div className="flex-wrap flex flex-row justify-center">
+            <Image
+              className="rounded-lg mr-3 my-2"
+              src="/images/react-logo.png"
+              alt="React logo"
+              height={50}
+              width={55}
+            />
+
+            <Image
+              className="rounded-lg mr-3  my-2"
+              src="/images/nextjs-logo.png"
+              alt="Next.JS Logo"
+              height={50}
+              width={50}
+            />
+
+            <Image
+              className="rounded-lg mr-3 my-2"
+              src="/images/vercel-logo.png"
+              alt="Vercel Logo"
+              height={50}
+              width={50}
+            />
+
+            <Image
+              className="rounded-lg mr-3 my-2"
+              src="/images/typescript.png"
+              alt="Typescript Logo"
+              height={50}
+              width={50}
+            />
+          </div>
+          <div className="">
           <a
-            href="https://jawn-sds.vercel.app/api/auth/signin"
+            href="https://www.tectoc.ca"
             target="blank"
-            className="btn btn-outline mx-2 w-28"
+            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
           >
             Live Demo
           </a>
           <a
-            href="https://linktr.ee/jawn_ca"
-            target="blank"
-            className="btn btn-outline mx-2 w-28"
+            href="https://github.com/Tight-Oil-Consortium/TecTOC_Website"
+            target="_blank"
+            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28 "
           >
-            Creators
+            GitHub
           </a>
+          </div>
         </div>
       </div>
     </div>

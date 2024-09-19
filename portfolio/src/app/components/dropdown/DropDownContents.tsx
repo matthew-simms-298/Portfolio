@@ -1,45 +1,57 @@
 "use client";
-
+import Link from "next/link";
 import React from "react";
 
 export default function DropDownContents() {
   return (
     <ul className="p-2 shadow menu dropdown-content bg-base-100 rounded-box">
       <li>
-        <a
-          href="/Matthew Simms - Resume.pdf"
-          className="btn btn-link"
-          download="matthew_simms_resume"
+        <Link
+          href="#skills"
+          className="btn btn-link btn-md"
         >
-          Resume
-        </a>
+          <p>Skills</p>
+        </Link>
       </li>
       <li>
-        <a
-          href="https://www.sait.ca/programs-and-courses/diplomas/software-development"
-          target="_blank"
-          className="btn btn-link"
+        <Link
+          href="#employment"
+          className="btn btn-link btn-md"
         >
-          Education
-        </a>
+          <p>Employment</p>
+        </Link>
       </li>
       <li>
-        <a
-          href="https://github.com/matthew-simms-298"
-          target="_blank"
-          className="btn btn-link"
+        <Link
+          href="#education"
+          className="btn btn-link btn-md"
         >
-          GitHub
-        </a>
+          <p>Education</p>
+        </Link>
       </li>
       <li>
-        <a
-          href="https://www.linkedin.com/in/matthew-simms-676063256/"
-          target="_blank"
-          className="btn btn-link"
+        <Link
+          href="#tech-stack"
+          className="btn btn-link btn-md"
         >
-          Linkedin
-        </a>
+          <p>Tech Stack</p>
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="#projects"
+          className="btn btn-link btn-md"
+        >
+          <p>Projects</p>
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="#contact"
+          className="btn btn-link btn-md"
+        >
+          <p>Contact Me!</p>
+        </Link>
       </li>
     </ul>
   );

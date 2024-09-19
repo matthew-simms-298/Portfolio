@@ -3,16 +3,14 @@ import Image from "next/image";
 
 export default function TecTOC() {
   return (
-    <div className="card sm:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
-      <figure className="bg-white w-full sm:w-2/5">
-        <Image
-          src="/images/TecTOC-logo.png"
+    <div className="card xl:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
+      <figure className="lg:w-1/4">
+        <img
+          src="/images/tectoc.png"
           alt="TecTOC logo"
-          width={500}
-          height={500}
         />
       </figure>
-      <div className="card-body">
+      <div className="card-body lg:w-3/4">
         <h2 className="card-title">TecTOC Advertisment Page</h2>
         <p>
           TecTOC was a website dedicated to providing insight to potential
@@ -20,18 +18,10 @@ export default function TecTOC() {
           licensed user to access our data and analytics program.
         </p>
         
-        <div className="card-actions mt-5 sm:justify-between">
-        <div className="justify-start flex flex-row items flex-wrap">
-            {/*<Image
-              className="rounded-lg mr-3"
-              src="/images/tailwindcss-logo.png"
-              alt="CSS Logo"
-              height={50}
-              width={50}
-            />*/}
-
+        <div className="card-actions items-center justify-center md:justify-between">
+        <div className="flex-wrap flex flex-row justify-center">
             <Image
-              className="rounded-lg mr-3"
+              className="rounded-lg mr-3 my-2"
               src="/images/react-logo.png"
               alt="React logo"
               height={50}
@@ -39,7 +29,7 @@ export default function TecTOC() {
             />
 
             <Image
-              className="rounded-lg mr-3"
+              className="rounded-lg mr-3  my-2"
               src="/images/nextjs-logo.png"
               alt="Next.JS Logo"
               height={50}
@@ -47,7 +37,7 @@ export default function TecTOC() {
             />
 
             <Image
-              className="rounded-lg mr-3"
+              className="rounded-lg mr-3 my-2"
               src="/images/vercel-logo.png"
               alt="Vercel Logo"
               height={50}
@@ -55,25 +45,25 @@ export default function TecTOC() {
             />
 
             <Image
-              className="rounded-lg mr-3"
+              className="rounded-lg mr-3 my-2"
               src="/images/typescript.png"
               alt="Typescript Logo"
               height={50}
               width={50}
             />
           </div>
-          <div>
+          <div className="">
           <a
-            href="https://jawn-sds.vercel.app/api/auth/signin"
+            href="https://www.tectoc.ca"
             target="blank"
-            className="btn btn-outline mx-2 w-28"
+            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
           >
             Live Demo
           </a>
           <a
             href="https://github.com/Tight-Oil-Consortium/TecTOC_Website"
-            target="blank"
-            className="btn btn-outline mx-2 w-28"
+            target="_blank"
+            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28 "
           >
             GitHub
           </a>

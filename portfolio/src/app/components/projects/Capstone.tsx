@@ -1,43 +1,36 @@
 import React from "react";
 import Image from "next/image";
-import TechStack from "../TechStack";
 
-export default function Capstone() {
+export default function TecTOC() {
   return (
-    <div className="card sm:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
-      <figure>
-        <Image
-          width={500}
-          height={500}
-          src="/images/JAWN-logo.jpeg"
-          alt="Capstone Project"
+    <div className="card xl:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
+      <figure className="xl:w-1/4">
+        <img
+          src="/images/JAWN-logo.png"
+          alt="TecTOC logo"
         />
       </figure>
-      <div className="card-body">
-        <h2 className="hidden card-title text-md md:card-title sm:block">
-          Schedule Distribution System (SDS)
-        </h2>
-        <h2 className="card-title text-md md:card-title sm:hidden">SDS</h2>
-        <p className="text-sm md:text-base ">
-          The <a className="italic">{'"Schedule Distribution System"'}</a> or
+      <div className="card-body xl:w-3/4">
+        <h2 className="card-title">Schedule Distribution System (SDS)</h2>
+        <p>
+        The <a className="italic">{'"Schedule Distribution System"'}</a> or
           SDS for short, was our Capstone project. The idea was to give small
           businesses as well as large corporations a more efficient method of
           schedule distribution. Keeping all employees updated on the latest
           changes.
         </p>
-
-        <div className="card-actions sm:justify-between">
-          <div className="justify-start flex flex-row items flex-wrap">
-            <Image
-              className="rounded-lg mr-3"
+        
+        <div className="card-actions items-center justify-center md:justify-between">
+        <div className="flex-wrap flex flex-row justify-center">
+        <Image
+              className="rounded-lg mr-3 my-2"
               src="/images/tailwindcss-logo.png"
               alt="TailwindCSS Logo"
               height={50}
               width={50}
             />
-
             <Image
-              className="rounded-lg mr-3"
+              className="rounded-lg mr-3 my-2"
               src="/images/react-logo.png"
               alt="React logo"
               height={50}
@@ -45,7 +38,7 @@ export default function Capstone() {
             />
 
             <Image
-              className="rounded-lg mr-3"
+              className="rounded-lg mr-3  my-2"
               src="/images/nextjs-logo.png"
               alt="Next.JS Logo"
               height={50}
@@ -53,7 +46,7 @@ export default function Capstone() {
             />
 
             <Image
-              className="rounded-lg mr-3"
+              className="rounded-lg mr-3 my-2"
               src="/images/vercel-logo.png"
               alt="Vercel Logo"
               height={50}
@@ -61,29 +54,28 @@ export default function Capstone() {
             />
 
             <Image
-              className="rounded-lg mr-3"
+              className="rounded-lg mr-3 my-2"
               src="/images/typescript.png"
               alt="Typescript Logo"
               height={50}
               width={50}
             />
           </div>
-
-          <div className="justify-end">
-            <a
-              href="https://jawn-sds.vercel.app/api/auth/signin"
-              target="_blank"
-              className="btn btn-outline mx-2 w-28"
-            >
-              Live Demo
-            </a>
-            <a
-              href="https://github.com/RCC-STUDIO/jawn-timetracker"
-              target="_blank"
-              className="btn btn-outline mx-2 w-28"
-            >
-              GitHub
-            </a>
+          <div className="">
+          <a
+            href="https://jawn-sds.vercel.app/api/auth/signin"
+            target="blank"
+            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
+          >
+            Live Demo
+          </a>
+          <a
+            href="https://github.com/Tight-Oil-Consortium/TecTOC_Website"
+            target="blank"
+            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28 "
+          >
+            GitHub
+          </a>
           </div>
         </div>
       </div>

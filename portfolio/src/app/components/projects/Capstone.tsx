@@ -64,14 +64,14 @@ export default function TecTOC() {
           <div className="">
           <a
             href="https://jawn-sds.vercel.app/api/auth/signin"
-            target="blank"
+            target="_blank"
             className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
           >
             Live Demo
           </a>
           <a
-            href="https://github.com/Tight-Oil-Consortium/TecTOC_Website"
-            target="blank"
+            href="https://github.com/RCC-STUDIO/jawn-timetracker"
+            target="_blank"
             className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28 "
           >
             GitHub

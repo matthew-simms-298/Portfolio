@@ -1,6 +1,7 @@
 "use client";
 import Capstone from "@/app/components/projects/Capstone";
 import TecTOC from "@/app/components/projects/TecTOC";
+import Dodge from "./projects/Dodge";
 
 export default function ProjectHighlights() {
   return (
@@ -9,6 +10,7 @@ export default function ProjectHighlights() {
       <div className="flex flex-col items-center">
         <Capstone />
         <TecTOC/>
+        <Dodge/>
       </div>
 
       <p className="text-center italic font-light mt-24">

@@ -29,9 +29,9 @@ export default function Home() {
             </form>
             <h3 className="font-bold text-lg">Error</h3>
             <p className="py-4">
-              I'm sorry to inform you that the GitHub repository is private and
+              {"I'm"} sorry to inform you that the GitHub repository is private and
               cannot be viewed publicly at this time, but feel free to see the
-              current product via the "Live Demo" button!
+              current product via the {'"Live Demo"'} button!
             </p>
           </div>
         </dialog>

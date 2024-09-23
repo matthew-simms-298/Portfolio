@@ -42,15 +42,8 @@ export default function HeaderComponent() {
           <p className="mt-3 text-sm lg:text-base">
             Hello! My name is Matthew Simms, a recent SAIT graduate from the
             Software Development program. I am primarily a Front-End React
-            Developer, based in {""}
-            <a
-              className="hover:underline"
-              href="https://www.google.ca/maps/place/Calgary,+AB/@51.0275069,-114.2529819,11z/data=!3m1!4b1!4m6!3m5!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0447331!4d-114.0718831!16zL20vMDFyMzI?entry=ttu"
-              target="_blank"
-            >
-              Canada
-            </a>
-            🍁🏒
+            Developer, based in Canada 🍁🏒
+            
           </p>
         </div>
         <div className="w-1/3 justify-between hidden mt-32 xl:flex flex-row">

@@ -48,7 +48,7 @@ export default function HeaderComponent() {
               href="https://www.google.ca/maps/place/Calgary,+AB/@51.0275069,-114.2529819,11z/data=!3m1!4b1!4m6!3m5!1s0x537170039f843fd5:0x266d3bb1b652b63a!8m2!3d51.0447331!4d-114.0718831!16zL20vMDFyMzI?entry=ttu"
               target="_blank"
             >
-              Calgary, AB
+              Canada
             </a>
             🍁🏒
           </p>

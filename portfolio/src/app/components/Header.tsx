@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function HeaderComponent() {
   return (
-    <header className="text-primary bg-base-200 h-96 flex flex-col items-center w-full z-10 mt-10 xl:mt-1">
+    <header className="text-primary bg-base-200 h-96 flex flex-col items-center w-full z-10">
       <div className="flex flex-row items-center justify-center bg-base-100 w-full h-1/2 shadow-2xl shadow-base-300">
         <DropDown />
         <div className="w-1/3 justify-between hidden mt-32 xl:flex flex-row">
@@ -67,7 +67,7 @@ export default function HeaderComponent() {
             <p>Projects</p>
           </Link>
           <Link
-            href="#contact"
+            href="./contact"
             className="btn btn-link btn-lg"
           >
             <p>Contact</p>

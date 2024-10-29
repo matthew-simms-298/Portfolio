@@ -63,7 +63,7 @@ export default function TecTOC() {
           <a
             href="https://github.com/Tight-Oil-Consortium/TecTOC_Website"
             target="_blank"
-            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28 "
+            className="btn btn-disabled my-1 xl:mx-2 w-full xl:w-28 "
           >
             GitHub
           </a>

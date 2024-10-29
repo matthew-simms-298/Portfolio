@@ -6,10 +6,8 @@ import Education from "./components/Education";
 import Employment from "./components/Employment";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { useState } from "react";
 
 export default function Home() {
-  const [modal, setModal] = useState(false)
   return (
     <main className="min-h-screen bg-base-200 text-base-content flex flex-col items-center scroll-smooth">
       <Header/>
@@ -17,9 +15,13 @@ export default function Home() {
       <Employment />
       <Education />
       <TechStack />
-      <Projects modalState={() => setModal(true)} />
+      <Projects />
 
-      {modal && (
+      {/*
+      ====================================================
+      TO BE DETERMINED FOR POTENTIAL FUTURE IMPLEMENTATION
+      ====================================================
+      modal && (
         <dialog className="modal bg-opacity-50 bg-base-100" open>
           <div className="modal-box">
             <form method="dialog">
@@ -38,7 +40,7 @@ export default function Home() {
             </p>
           </div>
         </dialog>
-      )}
+      )*/}
 
       <Footer/>
     </main>

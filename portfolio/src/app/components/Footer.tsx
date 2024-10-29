@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer id="contact" className=" text-white flex flex-row bg-base-100 w-full just p-7 mt-5 justify-between items-center">
+    <footer id="contact" className=" text-white flex flex-row bg-base-100 w-full just p-7 justify-between items-center">
       <p className="w-1/3">Give me a shout!</p>
 
       <div className="flex flex-row flex-wrap items-center">

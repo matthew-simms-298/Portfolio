@@ -1,8 +1,16 @@
 "use client";
 
+import { useRef } from "react";
+import React from "react";
+
+// ENVIRONMENT VARIABLES
+
+
 export default function ContactForm() {
+  
   return (
-    <form className="bg-base-100 flex flex-col w-1/2 p-10 justify-between rounded">
+    <form className="bg-base-100 flex flex-col w-1/2 p-10 justify-between rounded"
+    >
       <div>
         <p className="italic">"*" means it is a required field</p>
         {/* FIRST + LAST NAME */}
@@ -16,6 +24,7 @@ export default function ContactForm() {
             type="text"
             required
             placeholder="First Name *"
+            name="user_name"
           ></input>
           <input
             className="w-1/2 h-16 border outline-none border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 ml-3 transition duration-500
@@ -26,6 +35,7 @@ export default function ContactForm() {
             type="text"
             required
             placeholder="Last Name *"
+            name="user_name"
           ></input>
         </div>
         {/* EMAIL ADDRESS */}
@@ -38,6 +48,7 @@ export default function ContactForm() {
           type="email"
           required
           placeholder="Email *"
+          name="user_email"
         ></input>
         {/* EMAIL SUBJECT */}
         <input
@@ -59,11 +70,14 @@ export default function ContactForm() {
             focus:border-white"
           required
           placeholder="Enter you're message here *"
+          name="message"
         ></textarea>
       </div>
-      <button className="btn btn-outline h-16 w-full border rounded-none duration-500">
-        Send
-      </button>
+      <input
+        type="submit"
+        placeholder="Send"
+        className="btn btn-outline h-16 w-full border rounded-none duration-500"
+      ></input>
     </form>
   );
 }

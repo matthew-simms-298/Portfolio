@@ -9,8 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "next": "^14.2.3"
+    "@emailjs/browser": "^4.4.1",
+    "next": "^15.0.2",
+    "node": "^22.11.0"
   },
   "devDependencies": {
     "@types/node": "^20",

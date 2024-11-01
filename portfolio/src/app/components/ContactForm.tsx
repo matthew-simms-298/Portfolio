@@ -2,17 +2,36 @@
 
 import { useRef } from "react";
 import React from "react";
+import emailjs from "@emailjs/browser"
 
 // ENVIRONMENT VARIABLES
-
+const serviceID = process.env.NEXT_PUBLIC_SERVICE_ID as string
+const templateID = process.env.NEXT_PUBLIC_TEMPLATE_ID as string
+const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY as string
 
 export default function ContactForm() {
+
+  const form = useRef<HTMLFormElement | null>(null)
+  
+  function sendEmail(event: React.FormEvent) {
+    event.preventDefault()
+
+    emailjs.sendForm(serviceID, templateID, form.current as HTMLFormElement, publicKey).then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      (error) => {
+        console.log('FAILED...', error);
+        console.log(publicKey, templateID, serviceID)
+      },
+    )
+  }
   
   return (
-    <form className="bg-base-100 flex flex-col w-1/2 p-10 justify-between rounded"
+    <form ref={form} onSubmit={sendEmail} className="bg-base-100 flex flex-col w-1/2 p-10 justify-between rounded"
     >
       <div>
-        <p className="italic">"*" means it is a required field</p>
+        <p className="italic">{'"*"'} means it is a required field</p>
         {/* FIRST + LAST NAME */}
         <div className="flex flex-row justify-between my-3 w-full">
           <input
@@ -20,22 +39,30 @@ export default function ContactForm() {
             focus:text-white
             focus:placeholder-white
             focus:border-white
-            hover:border-white"
+            hover:border-white
+            placeholder:transition
+            placeholder:duration-500
+            hover:placeholder-white
+            hover:text-white"
             type="text"
             required
             placeholder="First Name *"
-            name="user_name"
+            name="first_name"
           ></input>
           <input
             className="w-1/2 h-16 border outline-none border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 ml-3 transition duration-500
             focus:text-white
             focus:placeholder-white
             hover:border-white
-            focus:border-white"
+            focus:border-white
+            placeholder:transition
+            placeholder:duration-500
+            hover:placeholder-white
+            hover:text-white"
             type="text"
             required
             placeholder="Last Name *"
-            name="user_name"
+            name="last_name"
           ></input>
         </div>
         {/* EMAIL ADDRESS */}
@@ -44,7 +71,11 @@ export default function ContactForm() {
             focus:text-white
             focus:placeholder-white
             hover:border-white
-            focus:border-white"
+            focus:border-white
+            placeholder:transition
+            placeholder:duration-500
+            hover:placeholder-white
+            hover:text-white"
           type="email"
           required
           placeholder="Email *"
@@ -56,10 +87,15 @@ export default function ContactForm() {
             focus:text-white
             focus:placeholder-white
             hover:border-white
-            focus:border-white"
+            focus:border-white
+            placeholder:transition
+            placeholder:duration-500
+            hover:placeholder-white
+            hover:text-white"
           type="text"
           required
           placeholder="Subject *"
+          name="subject"
         ></input>
         {/* EMAIL MESSAGE CONTENT */}
         <textarea
@@ -67,7 +103,11 @@ export default function ContactForm() {
             focus:text-white
             focus:placeholder-white
             hover:border-white
-            focus:border-white"
+            focus:border-white
+            placeholder:transition
+            placeholder:duration-500
+            hover:placeholder-white
+            hover:text-white"
           required
           placeholder="Enter you're message here *"
           name="message"
@@ -76,6 +116,7 @@ export default function ContactForm() {
       <input
         type="submit"
         placeholder="Send"
+        value="Send"
         className="btn btn-outline h-16 w-full border rounded-none duration-500"
       ></input>
     </form>

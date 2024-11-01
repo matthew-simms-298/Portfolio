@@ -11,7 +11,7 @@ export default function Dodge() {
         <p>
           This is a passion project of mine, I am a big fan of the Dodge
           company, as well as I drove a 1999 Dodge Stratus as my first vehicle.
-          It's a modernization of the 1999 model year for the Dodge Website
+          {"It's"} a modernization of the 1999 model year for the Dodge Website
         </p>
 
         <div className="card-actions items-center justify-center md:justify-between">

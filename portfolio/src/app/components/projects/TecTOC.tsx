@@ -53,7 +53,7 @@ export default function TecTOC() {
             />
           </div>
           <div className="">
-          <a
+          {/*<a
             href="https://www.tectoc.ca"
             target="blank"
             className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
@@ -66,6 +66,12 @@ export default function TecTOC() {
             className="btn btn-disabled my-1 xl:mx-2 w-full xl:w-28 "
           >
             GitHub
+          </a>*/}
+          <a
+            href="/pages/tectoc"
+            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
+          >
+            Learn More
           </a>
           </div>
         </div>

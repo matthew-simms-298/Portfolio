@@ -4,15 +4,24 @@ import TechStack from "@/app/components/TechStack";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Employment from "./components/Employment";
-import Header from "./components/Header";
+import Header from "./components/HomePageHeader";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-base-200 pb-5 text-base-content flex flex-col items-center scroll-smooth">
-      <Header/>
-      <Skills />
+      <Header />
+      {/*
+      
+      ============================================
+      <Skills /> (This is also causing a massive 
+      error with duplicate children when rendering 
+      the arrays into the skill sets)
       <Employment />
       <Education />
+
+      DISBALED UNTIL FURTHER INSTRUCTION
+      ============================================
+      */}
       <TechStack />
       <Projects />
 

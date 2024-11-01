@@ -4,18 +4,35 @@ import TechStack from "@/app/components/TechStack";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 import Employment from "./components/Employment";
+import Header from "./components/HomePageHeader";
 import { useState } from "react";
 
 export default function Home() {
-  const [modal, setModal] = useState(false);
+
+  const [modal, setModal] = useState(false)
   return (
-    <main className="min-h-screen bg-base-200 p-5 text-base-content flex flex-col items-center scroll-smooth">
-      <Skills />
+    <main className="min-h-screen bg-base-200 pb-5 text-base-content flex flex-col items-center scroll-smooth">
+      <Header />
+      {/*
+      
+      ============================================
+      <Skills /> (This is also causing a massive 
+      error with duplicate children when rendering 
+      the arrays into the skill sets)
       <Employment />
       <Education />
-      <TechStack />
-      <Projects modalState={() => setModal(true)} />
 
+      DISBALED UNTIL FURTHER INSTRUCTION
+      ============================================
+      */}
+      <TechStack />
+      <Projects modalState={() => setModal(true)}/>
+
+      {/*
+      ====================================================
+      TO BE DETERMINED FOR POTENTIAL FUTURE IMPLEMENTATION
+      ====================================================
+      */}
       {modal && (
         <dialog className="modal bg-opacity-50 bg-base-100" open>
           <div className="modal-box">

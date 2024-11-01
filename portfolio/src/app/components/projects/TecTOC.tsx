@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function TecTOC() {
+export default function TecTOC({ modalState }: { modalState: () => void }) {
   return (
     <div className="card xl:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
       <figure className="lg:w-1/4">
@@ -53,26 +53,27 @@ export default function TecTOC() {
             />
           </div>
           <div className="">
-          {/*<a
+          <a
             href="https://www.tectoc.ca"
             target="blank"
             className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
           >
             Live Demo
           </a>
-          <a
-            href="https://github.com/Tight-Oil-Consortium/TecTOC_Website"
-            target="_blank"
-            className="btn btn-disabled my-1 xl:mx-2 w-full xl:w-28 "
+          <button
+            /*href="https://github.com/Tight-Oil-Consortium/TecTOC_Website"
+            target="_blank"*/
+            onClick={modalState}
+            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
           >
             GitHub
-          </a>*/}
-          <a
+          </button>
+          {/*<a
             href="/pages/tectoc"
             className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
           >
             Learn More
-          </a>
+          </a>*/}
           </div>
         </div>
       </div>

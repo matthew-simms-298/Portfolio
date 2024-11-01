@@ -4,7 +4,7 @@ import React from "react"
 
 export default function Capstone() {
     return (
-        <main>
+        <main className="flex flex-grow">
             <p>Capstone Page</p>
         </main>
     )

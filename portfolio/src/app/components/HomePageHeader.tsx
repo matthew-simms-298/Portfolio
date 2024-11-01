@@ -13,28 +13,7 @@ export default function HeaderComponent() {
   return (
     <header className="text-primary bg-base-200 h-56 mb-24 flex flex-col items-center w-full shadow-base-300">
       <div className="flex flex-row bg-base-100 items-center justify-center  w-full h-1/2 shadow-2xl shadow-base-300">
-        <DropDown />
-        {/*<div className="w-1/3 justify-between hidden mt-32 xl:flex flex-row">
-        <Link
-          href="#skills"
-          className="btn btn-link btn-lg"
-        >
-          <p>Skills</p>
-        </Link>
-        <Link
-          href="#employment"
-          className="btn btn-link btn-lg"
-        >
-          <p>Employment</p>
-        </Link>
-        <Link
-          href="#education"
-          className="btn btn-link btn-lg"
-        >
-          <p>Education</p>
-        </Link>
-        </div>*/}
-        <div className="flex flex-col text-center items-center mt-48 w-1/2 lg:w-1/3 ">
+        <div className="flex flex-col text-center items-center mt-64 xl:mt-48 w-1/2 lg:w-1/3 ">
           {/*<h1 className="text-3xl italic font-serif my-6">Matthew Simms</h1>*/}
           <Image
             className="rounded-full"

@@ -28,14 +28,14 @@ export default function ContactForm() {
   }
   
   return (
-    <form ref={form} onSubmit={sendEmail} className="bg-base-100 flex flex-col w-1/2 p-10 justify-between rounded"
+    <form ref={form} onSubmit={sendEmail} className="bg-base-100 flex flex-col w-full xl:w-2/5 p-10 justify-between rounded"
     >
       <div>
         <p className="italic">{'"*"'} means it is a required field</p>
         {/* FIRST + LAST NAME */}
-        <div className="flex flex-row justify-between my-3 w-full">
+        <div className="flex flex-col xl:flex-row justify-between my-3 w-full">
           <input
-            className="w-1/2 h-16 border outline-none border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 mr-3 transition duration-500
+            className="xl:w-1/2 border outline-none border-base-content text-base-content mb-6 xl:mb-0 placeholder-base-content p-5 text-sm bg-base-100 xl:mr-3 transition duration-500
             focus:text-white
             focus:placeholder-white
             focus:border-white
@@ -50,7 +50,7 @@ export default function ContactForm() {
             name="first_name"
           ></input>
           <input
-            className="w-1/2 h-16 border outline-none border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 ml-3 transition duration-500
+            className="xl:w-1/2 border outline-none border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 xl:ml-3 transition duration-500
             focus:text-white
             focus:placeholder-white
             hover:border-white
@@ -67,7 +67,7 @@ export default function ContactForm() {
         </div>
         {/* EMAIL ADDRESS */}
         <input
-          className="w-full outline-none h-16 border border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 my-3 transition duration-500
+          className="w-full outline-none border border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 my-3 transition duration-500
             focus:text-white
             focus:placeholder-white
             hover:border-white
@@ -83,7 +83,7 @@ export default function ContactForm() {
         ></input>
         {/* EMAIL SUBJECT */}
         <input
-          className="w-full h-16 border outline-none border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 my-3 transition duration-500
+          className="w-full border outline-none border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 my-3 transition duration-500
             focus:text-white
             focus:placeholder-white
             hover:border-white
@@ -99,7 +99,7 @@ export default function ContactForm() {
         ></input>
         {/* EMAIL MESSAGE CONTENT */}
         <textarea
-          className="resize-none break-words outline-none h-72 w-full border border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 my-3 transition duration-500
+          className="resize-none break-words outline-none h-52 w-full border border-base-content text-base-content placeholder-base-content p-5 text-sm bg-base-100 my-3 transition duration-500
             focus:text-white
             focus:placeholder-white
             hover:border-white

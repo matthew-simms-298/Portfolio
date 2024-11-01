@@ -62,7 +62,7 @@ export default function TecTOC() {
             />
           </div>
           <div className="">
-          {/*<a
+          <a
             href="https://jawn-sds.vercel.app/api/auth/signin"
             target="blank"
             className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
@@ -75,13 +75,13 @@ export default function TecTOC() {
             className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28 "
           >
             GitHub
-          </a>*/}
-          <a
+          </a>
+          {/*<a
             href="/pages/capstone"
             className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
           >
             Learn More
-          </a>
+          </a>*/}
           </div>
         </div>
       </div>

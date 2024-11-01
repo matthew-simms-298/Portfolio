@@ -6,52 +6,26 @@ export default function DropDownContents() {
   return (
     <ul className="p-2 shadow menu dropdown-content bg-base-100 rounded-box">
       <li>
-        <Link
-          href="#skills"
-          className="btn btn-link btn-md"
-        >
-          <p>Skills</p>
-        </Link>
+      <a href="/" className="p-5 hover:text-base-content duration-500 font-bold">
+        Home
+      </a>
       </li>
       <li>
-        <Link
-          href="#employment"
-          className="btn btn-link btn-md"
-        >
-          <p>Employment</p>
-        </Link>
+      <a
+        href="/pages/contact"
+        className="p-5 hover:text-base-content duration-500 font-bold"
+      >
+        Contact
+      </a>
       </li>
       <li>
-        <Link
-          href="#education"
-          className="btn btn-link btn-md"
-        >
-          <p>Education</p>
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="#tech-stack"
-          className="btn btn-link btn-md"
-        >
-          <p>Tech Stack</p>
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="#projects"
-          className="btn btn-link btn-md"
-        >
-          <p>Projects</p>
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="#contact"
-          className="btn btn-link btn-md"
-        >
-          <p>Contact Me!</p>
-        </Link>
+      <a
+        href="/Matthew Simms - 2024.pdf"
+        download={"Matthew Simms Resume"}
+        className="p-5 hover:text-base-content duration-500 font-bold"
+      >
+        Resume
+      </a>
       </li>
     </ul>
   );

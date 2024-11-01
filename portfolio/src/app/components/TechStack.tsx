@@ -4,7 +4,7 @@ export default function TechStack() {
   return (
     <div id="tech-stack" className="flex flex-col items-center mt-20 text-center">
       <h2 className="text-4xl italic font-serif font-thin mb-5">
-        This {"Website's"} Tech Stack
+        Expertise
       </h2>
       <div className="flex flex-row items-center justify-center mt-5 flex-wrap">
         <a href="https://tailwindcss.com" target="_blank">

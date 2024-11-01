@@ -76,6 +76,12 @@ export default function TecTOC() {
           >
             GitHub
           </a>
+          {/*<a
+            href="/pages/capstone"
+            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
+          >
+            Learn More
+          </a>*/}
           </div>
         </div>
       </div>

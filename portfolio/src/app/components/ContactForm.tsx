@@ -22,7 +22,6 @@ export default function ContactForm() {
       },
       (error) => {
         console.log('FAILED...', error);
-        console.log(publicKey, templateID, serviceID)
       },
     )
   }

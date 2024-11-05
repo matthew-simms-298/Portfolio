@@ -11,7 +11,7 @@ export default function TecTOC({ modalState }: { modalState: () => void }) {
         />
       </figure>
       <div className="card-body lg:w-3/4">
-        <h2 className="card-title">TecTOC Advertisment Page</h2>
+        <h2 className="card-title">TecTOC Corporate Website</h2>
         <p>
           TecTOC was a website dedicated to providing insight to potential
           consumers of our future application which allowed the validated

@@ -1,7 +1,7 @@
 "use client";
 import Projects from "@/app/components/Projects";
 import TechStack from "@/app/components/TechStack";
-import Skills from "./components/Skills";
+import Skills from "./components/ProjectRequirements";
 import Education from "./components/Education";
 import Employment from "./components/Employment";
 import Header from "./components/HomePageHeader";

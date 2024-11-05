@@ -36,14 +36,14 @@ export default function Skills() {
         <div className="border rounded-lg border-base-content bg-base-100 w-full lg:w-1/3 p-2 m-3 shadow-xl hover:scale-110 transition duration-700">
           <h2 className="underline font-serif text-xl">Web Development</h2>
           {webDevelopment.map((content, index) => (
-            <div  key={index} className="flex flex-row justify-between px-2 text-sm lg:text-lg">
-            <p className="py-2 text-white text-left" key={index}>
-              {content[0]}
-            </p>
-            <p className="py-2 text-right" key={index}>
-              {content[1]}
-            </p>
-          </div>
+            <div
+              key={index}
+              className="flex flex-column justify-center italic text-sm lg:text-lg"
+            >
+              <p className="py-2 text-white text-center" key={index}>
+              ◦ {content[0]}
+              </p>
+            </div>
           ))}
         </div>
         <div className="border rounded-lg border-base-content bg-base-100 w-full lg:w-1/3 p-2 m-3 shadow-xl hover:scale-110 transition duration-700">
@@ -51,14 +51,14 @@ export default function Skills() {
             Programming Languages
           </h2>
           {programming.map((content, index) => (
-            <div key={index} className="flex flex-row justify-between px-2 text-sm lg:text-lg">
-            <p className="py-2 text-white text-left" key={index}>
-              {content[0]}
-            </p>
-            <p className="py-2 text-right" key={index}>
-              {content[1]}
-            </p>
-          </div>
+            <div
+              key={index}
+              className="flex flex-column justify-center italic text-sm lg:text-lg"
+            >
+              <p className="py-2 text-white text-center" key={index}>
+              ◦ {content[0]}
+              </p>
+            </div>
           ))}
         </div>
 
@@ -68,12 +68,12 @@ export default function Skills() {
           </h2>
 
           {externalTech.map((content, index) => (
-            <div  key={index} className="flex flex-row justify-between px-2 text-sm lg:text-lg">
-              <p className="py-2 text-white text-left" key={index}>
-                {content[0]}
-              </p>
-              <p className="py-2 text-right" key={index}>
-                {content[1]}
+            <div
+              key={index}
+              className="flex flex-column justify-center italic text-sm lg:text-lg"
+            >
+              <p className="py-2 text-white text-center" key={index}>
+              ◦ {content[0]}
               </p>
             </div>
           ))}

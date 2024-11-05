@@ -31,7 +31,7 @@ export default function TecTOC() {
             />
             <Image
               className="rounded-lg mr-3 my-2"
-              src="/images/react-logo.png"
+              src="/images/react_logo.png"
               alt="React logo"
               height={50}
               width={55}

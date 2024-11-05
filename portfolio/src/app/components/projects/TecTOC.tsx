@@ -22,7 +22,7 @@ export default function TecTOC({ modalState }: { modalState: () => void }) {
         <div className="flex-wrap flex flex-row justify-center">
             <Image
               className="rounded-lg mr-3 my-2"
-              src="/images/react-logo.png"
+              src="/images/react_logo.png"
               alt="React logo"
               height={50}
               width={55}

@@ -2,12 +2,18 @@
 
 import React from "react";
 import ProjectRequirements from "@/app/components/ProjectRequirements";
+import TecTOCGallery from "@/app/components/TecTOCGallery";
+import { useState } from "react";
+import Modal from "@/app/components/Modal";
 export default function TecToc() {
+
+  const [modal, setModal] = useState(false)
+
   return (
-    <main className="flex flex-grow bg-base-200 justify-center">
+    <main className="flex flex-grow bg-base-200 py-5 justify-center">
       <div className="flex flex-col items-center w-3/4">
-        <h2 className="text-4xl italic font-serif font-thin mb-5 text-base-content">
-          Who or What is TecTOC?
+        <h2 className="text-4xl italic font-serif font-thin mb-5 text-center text-base-content">
+          What is TecTOC?
         </h2>
         <div className="my-10">
           <h3 className="font-serif">In Depth...</h3>
@@ -30,29 +36,71 @@ export default function TecToc() {
             The Journey
           </h2>
 
-          <h2 className="text-2xl italic font-serif font-thin my-5 text-base-content self-start">
-            Purpose
-          </h2>
-          <p className="self-start">
-            [long winded explanation goes here...]
-          </p>
+          <div className="py-8">
+            <h2 className="text-2xl italic font-serif font-thin my-5 text-base-content self-start">
+              Purpose
+            </h2>
+            <p className="self-start">
+              TecTOC is a Canadian technology and consulting firm focused on
+              subsurface energy solutions, such as oil, gas, and geothermal
+              energy. Leveraging advanced methodologies developed by the Tight
+              Oil Consortium at the University of Calgary, TecTOC offers
+              services in diagnostic fracture injection testing, flowback
+              analysis, and reservoir characterization. These services support
+              energy industry clients by optimizing hydraulic fracturing,
+              evaluating reservoir properties, and enhancing resource
+              management. The TecTOC website is essential for the future of oil
+              and gas as it connects energy companies with innovative subsurface
+              diagnostics and solutions to enhance extraction efficiency and
+              sustainability. By offering advanced tools like diagnostic
+              fracture injection testing and flowback analysis, the site
+              supports the industry’s shift toward data-driven resource
+              management, allowing companies to optimize production and reduce
+              environmental impact. In the evolving energy landscape, such
+              specialized expertise helps balance energy demands with a need for
+              responsible, efficient resource use.
+            </p>
+          </div>
 
-          <h2 className="text-2xl italic font-serif font-thin my-5 text-base-content self-start">
-            Project Requirements
-          </h2>
-        <ProjectRequirements/>
+          <div className="py-8">
+            <h2 className="text-2xl italic font-serif font-thin my-5 text-base-content self-start">
+              Project Requirements
+            </h2>
+            <ProjectRequirements />
+          </div>
         </div>
 
-        <div className="w-full">
-          <h2 className="text-2xl italic font-serif font-thin mb-5 text-base-content">
-            Gallery (TBD)
+        <div className="w-full py-8 flex flex-col items-center border-b pb-16 mb-10 border-b-base-content">
+        <h2 className="w-full text-3xl italic font-serif font-thin mb-10 text-base-content text-center border-b pb-5 border-base-content">
+            Gallery
           </h2>
-          <p className="">
-            This will contain all (or most) of the screens provided in mockups,
-            focus on this portion later!
-          </p>
+          <TecTOCGallery />
+        </div>
+
+        <h2 className="text-3xl italic font-serif font-thin mb-5 text-base-content">
+            Learn More
+          </h2>
+        <div className="mb-10 w-full items-center flex justify-center">
+        <a
+            href="https://www.tectoc.ca"
+            target="blank"
+            className="btn btn-outline w-1/2 xl:w-1/4  m-5"
+          >
+            Visit TecTOC.ca
+          </a>
+          <button
+            /*href="https://github.com/Tight-Oil-Consortium/TecTOC_Website"
+            target="_blank"*/
+            onClick={() => setModal(true)}
+            className="btn btn-outline w-1/2 xl:w-1/4 m-5"
+          >
+            GitHub
+          </button>
         </div>
       </div>
-    </main>
+      {modal && (
+        <Modal modalState={() => setModal(false)}/>
+      )}
+</main>
   );
 }

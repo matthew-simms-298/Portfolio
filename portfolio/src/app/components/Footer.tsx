@@ -8,7 +8,7 @@ export default function Footer() {
       <p className="w-1/4">Give me a shout!</p>
 
       <div className="flex flex-row flex-wrap items-center justify-end w-3/4">
-      <button className="mx-1 hover:text-base-content transition duration-500" onClick={() => {navigator.clipboard.writeText("(403) 397-1277")}}>(403) 397-1277</button>
+      {/*<button className="mx-1 hover:text-base-content transition duration-500" onClick={() => {navigator.clipboard.writeText("(403) 397-1277")}}>(403) 397-1277</button> */}
         <a href="https://github.com" target="_blank">
           <svg
             className="fill-white mx-1 hover:fill-base-content transition duration-500"

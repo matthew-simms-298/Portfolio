@@ -52,29 +52,14 @@ export default function TecTOC({ modalState }: { modalState: () => void }) {
               width={50}
             />
           </div>
-          <div className="">
+          
           <a
-            href="https://www.tectoc.ca"
-            target="blank"
-            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
-          >
-            Live Demo
-          </a>
-          <button
-            /*href="https://github.com/Tight-Oil-Consortium/TecTOC_Website"
-            target="_blank"*/
-            onClick={modalState}
-            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
-          >
-            GitHub
-          </button>
-          {/*<a
             href="/pages/tectoc"
-            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-28"
+            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-1/4"
           >
             Learn More
-          </a>*/}
-          </div>
+          </a>
+          
         </div>
       </div>
     </div>

@@ -5,9 +5,74 @@ import ProjectRequirements from "@/app/components/ProjectRequirements";
 import TecTOCGallery from "@/app/components/TecTOCGallery";
 import { useState } from "react";
 import Modal from "@/app/components/Modal";
-export default function TecToc() {
 
-  const [modal, setModal] = useState(false)
+type ComponentGroup = {
+  class: string;
+  elements: string[];
+};
+
+const tecTOCComponents: ComponentGroup[] = [
+  {
+    class: "Pages and Components",
+    elements: [
+      "Home",
+      "About",
+      "Case Studies*",
+      "Services*",
+      "Contact",
+      "Privacy Policy",
+      "Terms of Service",
+      "Header / Navigation",
+      "Footer",
+    ],
+  },
+  {
+    class: "Case Studies",
+    elements: [
+      "Navigator",
+      "About section",
+      "List of Services",
+      "Service Details",
+      "Drop Down Menus",
+    ],
+  },
+  {
+    class: "Services",
+    elements: [
+      "Service Navigator",
+      "Case Study Sub-Nav",
+      "About section",
+      "List of Services",
+      "Detailed Case Studies",
+      "Figures with figure text",
+      "References",
+    ],
+  },
+  {
+    class: "Header",
+    elements: [
+      "TecTOC Logo (Left)",
+      "Hyperlinks centered",
+      "Home",
+      "About",
+      "Services",
+      "Contact (Right)",
+    ],
+  },
+  {
+    class: "Footer",
+    elements: [
+      "TecTOC Logo",
+      "Copy Rights",
+      "Privacy Policy",
+      "Terms of Service",
+      "Tight Oil Consortium Logo",
+      "Mobile Customizations",
+    ],
+  },
+];
+export default function TecTOC() {
+  const [modal, setModal] = useState(false);
 
   return (
     <main className="flex flex-grow bg-base-200 py-5 justify-center">
@@ -66,22 +131,22 @@ export default function TecToc() {
             <h2 className="text-2xl italic font-serif font-thin my-5 text-base-content self-start">
               Project Requirements
             </h2>
-            <ProjectRequirements />
+            <ProjectRequirements components={tecTOCComponents} />
           </div>
         </div>
 
         <div className="w-full py-8 flex flex-col items-center border-b pb-16 mb-10 border-b-base-content">
-        <h2 className="w-full text-3xl italic font-serif font-thin mb-10 text-base-content text-center border-b pb-5 border-base-content">
+          <h2 className="w-full text-3xl italic font-serif font-thin mb-10 text-base-content text-center border-b pb-5 border-base-content">
             Gallery
           </h2>
           <TecTOCGallery />
         </div>
 
         <h2 className="text-3xl italic font-serif font-thin mb-5 text-base-content">
-            Learn More
-          </h2>
+          Learn More
+        </h2>
         <div className="mb-10 w-full items-center flex justify-center">
-        <a
+          <a
             href="https://www.tectoc.ca"
             target="blank"
             className="btn btn-outline w-1/2 xl:w-1/4  m-5"
@@ -98,9 +163,7 @@ export default function TecToc() {
           </button>
         </div>
       </div>
-      {modal && (
-        <Modal modalState={() => setModal(false)}/>
-      )}
-</main>
+      {modal && <Modal modalState={() => setModal(false)} />}
+    </main>
   );
 }

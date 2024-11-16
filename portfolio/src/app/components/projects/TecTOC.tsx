@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export default function TecTOC({ modalState }: { modalState: () => void }) {
+export default function TecTOC() {
   return (
     <div className="card xl:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
       <figure className="lg:w-1/4">

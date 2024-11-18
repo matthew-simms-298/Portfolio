@@ -55,7 +55,7 @@ export default function Capstone() {
               into the store to retrieve a photo of their current or future
               schedule or have the head send out the schedule to all of us
               shortly after posting in hopes we all have a means of receiving it
-              and there's no future issues with having to change it again. This
+              and {"there's"} no future issues with having to change it again. This
               is where me and my teammates would lend a hand in assisting them
               with SDS to eliminate these issues.
             </p>

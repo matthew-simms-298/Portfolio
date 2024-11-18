@@ -59,7 +59,6 @@ export default function TecTOC() {
           >
             Learn More
           </a>
-          
         </div>
       </div>
     </div>

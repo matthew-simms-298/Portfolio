@@ -2,75 +2,12 @@
 
 import React from "react";
 import ProjectRequirements from "@/app/components/ProjectRequirements";
-import TecTOCGallery from "@/app/components/TecTOCGallery";
+import Gallery from "@/app/components/Gallery";
 import { useState } from "react";
 import Modal from "@/app/components/Modal";
+import { tectocRequirements } from "@/app/extra/StaticData";
+import { tectocDesktop, tectocMobile } from "@/app/extra/ImageImports";
 
-type ComponentGroup = {
-  class: string;
-  elements: string[];
-};
-
-const tecTOCComponents: ComponentGroup[] = [
-  {
-    class: "Pages and Components",
-    elements: [
-      "Home",
-      "About",
-      "Case Studies*",
-      "Services*",
-      "Contact",
-      "Privacy Policy",
-      "Terms of Service",
-      "Header / Navigation",
-      "Footer",
-    ],
-  },
-  {
-    class: "Case Studies",
-    elements: [
-      "Navigator",
-      "About section",
-      "List of Services",
-      "Service Details",
-      "Drop Down Menus",
-    ],
-  },
-  {
-    class: "Services",
-    elements: [
-      "Service Navigator",
-      "Case Study Sub-Nav",
-      "About section",
-      "List of Services",
-      "Detailed Case Studies",
-      "Figures with figure text",
-      "References",
-    ],
-  },
-  {
-    class: "Header",
-    elements: [
-      "TecTOC Logo (Left)",
-      "Hyperlinks centered",
-      "Home",
-      "About",
-      "Services",
-      "Contact (Right)",
-    ],
-  },
-  {
-    class: "Footer",
-    elements: [
-      "TecTOC Logo",
-      "Copy Rights",
-      "Privacy Policy",
-      "Terms of Service",
-      "Tight Oil Consortium Logo",
-      "Mobile Customizations",
-    ],
-  },
-];
 export default function TecTOC() {
   const [modal, setModal] = useState(false);
 
@@ -131,7 +68,7 @@ export default function TecTOC() {
             <h2 className="text-2xl italic font-serif font-thin my-5 text-base-content self-start">
               Project Requirements
             </h2>
-            <ProjectRequirements components={tecTOCComponents} />
+            <ProjectRequirements components={tectocRequirements} />
           </div>
         </div>
 
@@ -139,7 +76,7 @@ export default function TecTOC() {
           <h2 className="w-full text-3xl italic font-serif font-thin mb-10 text-base-content text-center border-b pb-5 border-base-content">
             Gallery
           </h2>
-          <TecTOCGallery />
+          <Gallery desktopImages={tectocDesktop} mobileImages={tectocMobile}/>
         </div>
 
         <h2 className="text-3xl italic font-serif font-thin mb-5 text-base-content">

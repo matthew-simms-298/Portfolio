@@ -3,90 +3,11 @@
 import React from "react";
 import Competitors from "@/app/components/Competitors";
 import ProjectRequirements from "@/app/components/ProjectRequirements";
-import { useState } from "react";
 import Challenges from "@/app/components/Challenges";
+import { capstoneRequirements } from "@/app/extra/StaticData";
+import { capstoneImages } from "@/app/extra/ImageImports";
+import Gallery from "@/app/components/Gallery";
 
-type ComponentGroup = {
-  class: string;
-  elements: string[];
-};
-const capstoneRequirements: ComponentGroup[] = [
-  {
-    class: "Pages and Components",
-    elements: [
-      "My Shifts",
-      "Profile Page*",
-      "All Shifts Page*",
-      "Department Schedule*",
-      "Swap and Drop*",
-      "Footer / Navbar",
-      "Manager Priveleges*",
-      "MongoDB",
-      "Google Authentication",
-    ],
-  },
-  {
-    class: "My Shifts",
-    elements: [
-      "Displays current shifts",
-      "User locked view",
-      "Displays all details",
-      "Drop and Swap buttons in each shift",
-      "Swap shift Function",
-      "Drop shift Function",
-    ],
-  },
-  {
-    class: "Profile Page",
-    elements: [
-      "Google information",
-      "View Swap Requests",
-      "Deny or Accept Requests",
-      "Department Schedule*",
-      "Swap and Drop*",
-    ],
-  },
-  {
-    class: "All Shifts Page",
-    elements: [
-      "Lists department shifts",
-      "Select which to swap",
-      'Ability to return to "My Shifts"',
-      "Logic locked",
-      "Doesn't include user's shifts",
-      "Displays shift details",
-    ],
-  },
-  {
-    class: "Department Schedule",
-    elements: [
-      "Display current week",
-      "Shows employees in user's department",
-      "Shift details upon selection",
-      "Modal for shift details",
-      "Ability to exit modal",
-    ],
-  },
-  {
-    class: "Footer / NavBar",
-    elements: [
-      "Easy to use icons",
-      "Hyperlinks for pages",
-      "Schedule",
-      "Profile",
-      "My Shifts",
-    ],
-  },
-  {
-    class: "Manager Priveleges",
-    elements: [
-      "Manager page access",
-      "Approve Requests",
-      "Disapprove Requests",
-      "Submit next schedule",
-    ],
-  },
-];
 export default function Capstone() {
   return (
     <main className="flex flex-grow bg-base-200 py-5 justify-center">
@@ -169,16 +90,16 @@ export default function Capstone() {
 
             <div className="py-8 flex flex-col">
               <h2 className="text-2xl italic font-serif font-thin my-5 text-base-content self-start">
-                What I learned
+                Future plans
               </h2>
-              [another long winded description]
+              <p>In the future, we hope to advance this pototype into a fully fledged mobile app, allowing local and small businesses to have a more consistent and efficient form of communication between managers and employees.</p>
             </div>
 
             <div className="w-full py-8 flex flex-col items-center border-b pb-16 mb-10 border-b-base-content">
               <h2 className="w-full text-3xl italic font-serif font-thin mb-10 text-base-content text-center border-b pb-5 border-base-content">
                 Gallery
               </h2>
-              [CAPSTONE GALLERY]
+              <Gallery desktopImages={null} mobileImages={capstoneImages}/>
             </div>
           </div>
         </div>

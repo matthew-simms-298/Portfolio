@@ -9,7 +9,7 @@ export default function Challenges() {
     setDropDown(section === dropDown ? -1 : section);
   };
   return (
-    <div className="=flex flex-col justify-center items-start rounded-lg border-t border-x border-base-content w-full bg-base-100">
+    <div className="flex flex-col justify-center items-start rounded-lg border-t border-x border-base-content w-full bg-base-100">
       <div className={`transition-all duration-700 w-full border-b border-base-content relative ${dropDown === 1 ? "h-48 xl:h-44" : "h-[4.6rem]"}`}>
         <h3
           onClick={() => handleButtonClick(1)}
@@ -51,7 +51,7 @@ export default function Challenges() {
           onClick={() => handleButtonClick(3)}
           className="font-serif text-base-content italic py-5 text-2xl bg-base-100 rounded-b-lg p-5 z-10"
         >
-          Technical Difficulties
+          Technical Issues
         </h3>
         <div
           className={`p-5 transition-all duration-700 absolute inset-0 list-disc ${

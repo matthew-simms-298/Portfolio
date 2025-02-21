@@ -36,12 +36,6 @@ export default function Gallery({
             Destop
           </h2>
           <div className="flex justify-center items-center relative">
-            <button
-              className="btn btn-circle btn-lg text-3xl absolute left-0"
-              onClick={() => changeImage(-1)}
-            >
-              ❮
-            </button>
             <Image
               className="w-full"
               src={desktopImages[imageIndex]}
@@ -50,6 +44,12 @@ export default function Gallery({
               height={700}
             />
 
+            <button
+              className="btn btn-circle btn-lg text-3xl absolute left-0"
+              onClick={() => changeImage(-1)}
+            >
+              ❮
+            </button>
             <button
               className="btn btn-circle btn-lg text-3xl absolute right-0"
               onClick={() => changeImage(1)}

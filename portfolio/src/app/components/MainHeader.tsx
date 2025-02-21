@@ -17,7 +17,7 @@ export default function MainHeader() {
         Contact
       </a>
       <a
-        href="/Matthew Simms - 2024.pdf"
+        href="/Matthew Simms.pdf"
         download={"Matthew Simms Resume"}
         className="p-5 hover:text-base-content duration-500 font-bold hidden xl:block"
       >

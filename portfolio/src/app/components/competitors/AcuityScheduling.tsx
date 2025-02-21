@@ -4,16 +4,14 @@ import React from "react";
 import Image from "next/image";
 export default function AcuityScheduling() {
   return (
-      <div className="card bg-base-100 w-full h-[594px] my-3 xl:w-[32%] shadow-xl transistion duration-700 hover:scale-110 hover:m-5">
-        <figure>
-          <Image
+      <div className="card bg-base-100 w-full my-3 xl:w-[30%] shadow-xl transistion duration-700 xl:hover:scale-110 xl:hover:mx-5">
+        <figure className="h-2/3">
+          <img
             src="/images/competitors/acuityscheduling.png"
             alt=""
-            width={400}
-            height={200}
           />
         </figure>
-        <div className="card-body">
+        <div className="card-body h-1/3">
           <h2 className="card-title text-base-content">Acuity Scheduling</h2>
           <p>◦ They will charge on average $16 to $49 per month depending on the establishment</p>
         </div>

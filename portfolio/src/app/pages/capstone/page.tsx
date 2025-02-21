@@ -95,7 +95,7 @@ export default function Capstone() {
               <p>In the future, we hope to advance this pototype into a fully fledged mobile app, allowing local and small businesses to have a more consistent and efficient form of communication between managers and employees.</p>
             </div>
 
-            <div className="w-full py-8 flex flex-col items-center border-b pb-16 mb-10 border-b-base-content">
+            <div className="w-full pt-8 flex flex-col items-center mb-10">
               <h2 className="w-full text-3xl italic font-serif font-thin mb-10 text-base-content text-center border-b pb-5 border-base-content">
                 Gallery
               </h2>
@@ -103,7 +103,7 @@ export default function Capstone() {
             </div>
           </div>
         </div>
-        <h2 className="text-3xl italic font-serif font-thin mb-5 text-base-content self-center">
+        {/*<h2 className="text-3xl italic font-serif font-thin mb-5 text-base-content self-center">
               Learn More
             </h2>
 
@@ -122,7 +122,7 @@ export default function Capstone() {
               >
                 GitHub
               </a>
-            </div>
+            </div>*/}
       </div>
     </main>
   );

@@ -10,7 +10,7 @@ export default function MainHeader() {
   return (
     <header className={`flex flex-row justify-end ${pathName === '/' ? 'bg-base-100' : 'bg-base-200'}`}>
       <DropDown />
-      <DropDownV2/>
+      {/*<DropDownV2/>*/} 
       <a href="/" className="p-5 hover:text-base-content duration-500 font-bold hidden xl:block">
         Home
       </a>

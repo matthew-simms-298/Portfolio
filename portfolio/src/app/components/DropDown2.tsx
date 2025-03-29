@@ -3,7 +3,7 @@
 export default function MobileSideHeader() {
     return (
         <div className="fixed w-2/3 left-0 bg-red-500 h-full z-30 flex flex-col items-start p-4 justify-center">
-            <h1 className="text-2xl italic font-serif font-thin mb-5 text-center text-base-content self-start">Matthew Simms</h1>
+            <h1 className="text-2xl italic font-serif font-thin mb-5 text-center text-base-content">Matthew Simms</h1>
             <div className="flex flex-col">
                 <a href="/" className="py-5 hover:text-base-content duration-500 font-bold">
                     Home

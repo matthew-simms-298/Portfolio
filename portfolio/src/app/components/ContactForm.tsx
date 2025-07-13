@@ -17,29 +17,40 @@ export default function ContactForm() {
   function sendEmail(event: React.FormEvent) {
     event.preventDefault();
 
-    emailjs.sendForm(serviceID, templateID, form.current as HTMLFormElement, publicKey).then(
-      (response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        setStatus(true);
-        form.current?.reset();
-        
-        // Show the message and set it to fade out after a few seconds
-        setVisible(true);
-        setTimeout(() => setVisible(false), 3000);
-      },
-      (error) => {
-        console.log("FAILED...", error);
-        setStatus(false);
+    emailjs
+      .sendForm(
+        serviceID,
+        templateID,
+        form.current as HTMLFormElement,
+        publicKey
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setStatus(true);
+          form.current?.reset();
 
-        // Show the message and set it to fade out after a few seconds
-        setVisible(true);
-        setTimeout(() => setVisible(false), 3000);
-      }
-    );
+          // Show the message and set it to fade out after a few seconds
+          setVisible(true);
+          setTimeout(() => setVisible(false), 3000);
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          setStatus(false);
+
+          // Show the message and set it to fade out after a few seconds
+          setVisible(true);
+          setTimeout(() => setVisible(false), 3000);
+        }
+      );
   }
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="bg-base-100 flex flex-col w-full xl:w-2/5 p-10 justify-between rounded">
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className="bg-base-100 flex flex-col xl:w-1/2 p-10 justify-between rounded"
+    >
       <div>
         <p className="italic">{'"*"'} means it is a required field</p>
         {/* FIRST + LAST NAME */}
@@ -89,7 +100,9 @@ export default function ContactForm() {
             visible ? "opacity-100" : "opacity-0"
           } ${status === true ? "text-success" : "text-error"}`}
         >
-          {status === true ? "Your submission was successful!" : "Your submission failed, please try again..."}
+          {status === true
+            ? "Your submission was successful!"
+            : "Your submission failed, please try again..."}
         </p>
       </div>
       <input

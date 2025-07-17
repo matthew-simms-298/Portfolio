@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Header from './components/MainHeader'
+import HomeButton from './components/HomeButton'
 import Footer from './components/Footer'
 import { useState } from 'react'
 
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} flex flex-col min-h-screen`}>
-        <Header/>
+        <HomeButton/>
         {children}
         <Footer/>
         </body>

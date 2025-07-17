@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 export default function TecTOC() {
   return (
@@ -7,18 +6,39 @@ export default function TecTOC() {
       <figure className="xl:w-1/4">
         <img src="/images/JAWN-logo.png" alt="TecTOC logo" />
       </figure>
-      <div className="card-body xl:w-3/4">
-        <h2 className="card-title">SDS Capstone Prototype</h2>
-        <p>
-          The <a className="italic">{'"Schedule Distribution System"'}</a> or
-          SDS, was our Capstone project. The idea was to give small businesses
-          as well as large corporations a more efficient method of communicating
-          schedule updates, changes and allowing employees to make adjustments
-          through built in API.
-        </p>
+      <div className="xl:w-3/4 rounded-r-2xl from-transparent to-base-content xl:p-0.5 xl:bg-gradient-to-r  xl:pl-0">
+        <div className="bg-base-100 h-full card-body xl:rounded-r-2xl rounded-b-2xl xl:rounded-l-none">
+          <h2 className="card-title">SDS Capstone Prototype</h2>
+          <p className="text-white mb-20">
+            The <a className="italic">{'"Schedule Distribution System"'}</a> or
+            SDS, was our Capstone project. The idea was to give small businesses
+            as well as large corporations a more efficient method of communicating
+            schedule updates, changes and allowing employees to make adjustments
+            through built in API.
+          </p>
 
-        <div className="card-actions items-center justify-center md:justify-between">
-          <div className="flex-wrap flex flex-row justify-center">
+          <div className="card-actions items-center justify-center md:justify-end">
+            <a
+              href="/pages/capstone"
+              className="btn btn-outline my-1 xl:mx-2 w-full xl:w-1/4"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/*
+
+UNDECIDED
+=========
+This is the code used to showcase what was being
+used when I was making this website's project.
+
+<div className="flex-wrap flex flex-row justify-center">
             <Image
               className="rounded-lg mr-3 my-2"
               src="/images/tailwindcss-logo.png"
@@ -58,14 +78,5 @@ export default function TecTOC() {
               width={50}
             />
           </div>
-          <a
-            href="/pages/capstone"
-            className="btn btn-outline my-1 xl:mx-2 w-full xl:w-1/4"
-          >
-            Learn More
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-}
+
+*/

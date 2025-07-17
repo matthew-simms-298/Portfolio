@@ -69,11 +69,11 @@ export default function Gallery({
           {mobileImages.map((src, index) => (
             <Image
               key={index}
-              className="xl:w-1/4 p-2 transition-transform duration-700 hover:scale-125 ease-in-out "
+              className="xl:w-1/4 p-2 "
               src={src}
               alt={`Tectoc Image`}
-              width={400} // Set the desired width
-              height={1000} // Set the desired height
+              width={400}
+              height={1000}
             />
           ))}
         </div>

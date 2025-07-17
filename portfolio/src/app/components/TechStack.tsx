@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-export default function TechStack() {
+export default function TechStack({ reference }: {reference: React.RefObject<HTMLDivElement>}) {
   return (
-    <div id="tech-stack" className="flex flex-col items-center mt-20 text-center">
+    <div ref={reference} id="tech-stack" className="flex flex-col items-center mt-20 text-center">
       <h2 className="text-4xl italic font-serif font-thin mb-5">
         Tech Stack
       </h2>

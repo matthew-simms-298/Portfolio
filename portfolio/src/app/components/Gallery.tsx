@@ -31,7 +31,7 @@ export default function Gallery({
   return (
     <div className="w-full">
       {desktopImages !== null && (
-        <div>
+        <div className="hidden lg:block">
           <h2 className="text-2xl italic font-serif font-thin my-5 text-base-content self-start">
             Destop
           </h2>
@@ -61,7 +61,7 @@ export default function Gallery({
       )}
 
       {mobileImages !== null && <div>
-        <h2 className="hidden xl:block text-2xl italic font-serif font-thin my-5 mt-16 text-base-content self-start">
+        <h2 className="hidden lg:block text-2xl italic font-serif font-thin my-5 mt-16 text-base-content self-start">
           Mobile
         </h2>
 

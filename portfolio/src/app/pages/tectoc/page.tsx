@@ -19,7 +19,7 @@ export default function TecTOC() {
         </h2>
         <div className="my-10">
           <h3 className="font-serif">In Depth...</h3>
-          <p className="italic font-serif p-5 text-lg text-justify">
+          <p className="italic font-serif p-5 text-lg">
             {`"TecTOC, located in Calgary, Alberta, Canada, was launched to create a link
             between the cutting-edge, yet practical, applied research performedby Tight Oil 
             Consortium (TOC), and subsurface energy industry technology and service needs. 

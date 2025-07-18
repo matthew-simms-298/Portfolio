@@ -10,10 +10,11 @@ export default function HomePageHeader() {
   return (
     <div className="xl:mt-10 w-full flex flex-col justify-center">
       <div className="flex flex-col bg-gradient-to-b from-50% from-base-100 to-50% to-base-200 justify-center items-center py-10">
-                <div className="w-full h-10 absolute place-content-center shadow-2xl bg-base-100 to-base-200 shadow-stone-500 "> </div>
+      
+      <div className="w-full h-10 absolute place-content-center shadow-2xl bg-base-100 to-base-200 shadow-stone-500"> </div>
 
         <Image
-          className="rounded-full mt-10"
+          className="rounded-full mt-10 z-10"
           src="/images/profile pic.jpg"
           alt="Matthew Simms"
           width={300}

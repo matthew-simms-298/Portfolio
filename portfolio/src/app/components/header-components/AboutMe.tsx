@@ -25,7 +25,7 @@ export default function HomePageHeader() {
 
       <p className="flex self-center w-4/5 xl:w-1/3 font-thin text-center text-lg -mt-5 ">
         Hello! My name is Matthew Simms, an ongoing SAIT student in the Bachelor
-        of Software Development. I am and eager Canadian based Web Developer
+        of Software Development. I'm an eager Canadian based Web Developer
         with a passion for front-end design and user experience. I love creating
         eye catching websites that have clean and easy to use user interfaces!
         🍁🏒

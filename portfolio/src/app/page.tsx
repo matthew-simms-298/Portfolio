@@ -6,7 +6,7 @@ import Contact from "./components/Contact";
 
 
 import { useRef } from "react";
-
+import { useScroll } from "react-use";
 
 export default function Home() {
   const aboutRef = useRef<HTMLDivElement>(null);

@@ -2,11 +2,13 @@
 import DropDownV2 from "../DropDown2"
 import { useState } from "react";
 import { Link } from "react-scroll";
-
+import { useRef } from "react";
+import { useScroll } from "react-use";
 
 
 export default function MainHeader() {
   const [visible, setVisible] = useState(false)
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
     <div id="home" className="flex flex-row justify-end bg-base-100 w-full fixed top-0 z-30 shadow-lg">

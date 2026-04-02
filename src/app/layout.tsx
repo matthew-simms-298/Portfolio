@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import HomeButton from './components/HomeButton'
+import HomeButton from './scrapped/HomeButton'
 import Footer from './components/Footer'
 import { useState } from 'react'
 

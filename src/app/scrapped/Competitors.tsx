@@ -3,9 +3,9 @@
 import React from "react";
 import Image from "next/image";
 
-import Stafflinq from "./competitors/Stafflinq";
-import AcuityScheduling from "./competitors/AcuityScheduling";
-import SnapSchedule from "./competitors/SnapSchedule";
+import Stafflinq from "../components/competitors/Stafflinq";
+import AcuityScheduling from "../components/competitors/AcuityScheduling";
+import SnapSchedule from "../components/competitors/SnapSchedule";
 export default function Competitors() {
   return (
     <div className="flex flex-wrap justify-between my-10">

@@ -1,12 +1,12 @@
 "use client";
 
 import React from "react";
-import Competitors from "@/app/components/Competitors";
-import ProjectRequirements from "@/app/components/ProjectRequirements";
-import Challenges from "@/app/components/Challenges";
+import Competitors from "@/app/scrapped/Competitors";
+import ProjectRequirements from "@/app/scrapped/ProjectRequirements";
+import Challenges from "@/app/scrapped/Challenges";
 import { capstoneRequirements } from "@/app/extra/StaticData";
 import { capstoneImages } from "@/app/extra/ImageImports";
-import Gallery from "@/app/components/Gallery";
+import Gallery from "@/app/scrapped/Gallery";
 
 export default function Capstone() {
   return (

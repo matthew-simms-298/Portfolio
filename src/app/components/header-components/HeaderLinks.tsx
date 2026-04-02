@@ -1,5 +1,5 @@
 "use client";
-import DropDownV2 from "../DropDown2"
+import DropDownV2 from "../../scrapped/DropDown2"
 import { useState } from "react";
 import { Link } from "react-scroll";
 

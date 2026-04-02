@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import ProjectRequirements from "@/app/components/ProjectRequirements";
-import Gallery from "@/app/components/Gallery";
+import ProjectRequirements from "@/app/scrapped/ProjectRequirements";
+import Gallery from "@/app/scrapped/Gallery";
 import { useState } from "react";
 import Modal from "@/app/components/Modal";
 import { tectocRequirements } from "@/app/extra/StaticData";

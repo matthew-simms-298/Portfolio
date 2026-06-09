@@ -5,6 +5,7 @@ export default function TecTOC() {
     <div className="card xl:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
       <figure className="lg:w-1/4">
         <img
+        className="w-full h-full"
           src="/images/tectoc.png"
           alt="TecTOC logo"
         />
@@ -20,10 +21,11 @@ export default function TecTOC() {
 
           <div className="card-actions items-center justify-center md:justify-end">
             <a
-              href="/pages/tectoc"
+              href="https://www.tectoc.ca"
+              target="blank"
               className="btn btn-outline my-1 xl:mx-2 w-full xl:w-1/4"
             >
-              Learn More
+              Visit TecTOC
             </a>
           </div>
         </div>

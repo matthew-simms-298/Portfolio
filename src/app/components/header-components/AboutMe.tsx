@@ -28,7 +28,7 @@ export default function HomePageHeader() {
         of Software Development. {"I'm"} an eager Canadian based Web Developer
         with a passion for front-end design and user experience. I love creating
         eye catching websites that have clean and easy to use user interfaces!
-        🍁🏒
+        🍁
       </p>
 
     </div>

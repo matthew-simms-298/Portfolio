@@ -4,7 +4,7 @@ export default function TecTOC() {
   return (
     <div className="card xl:card-side bg-base-100 shadow-xl m-5 w-full hover:scale-110 transition duration-700">
       <figure className="xl:w-1/4">
-        <img src="/images/JAWN-logo.png" alt="TecTOC logo" />
+        <img className="w-full h-full" src="/images/JAWN-logo.png" alt="TecTOC logo" />
       </figure>
       <div className="xl:w-3/4 rounded-r-2xl from-transparent to-base-content xl:p-0.5 xl:bg-gradient-to-r  xl:pl-0">
         <div className="bg-base-100 h-full card-body xl:rounded-r-2xl rounded-b-2xl xl:rounded-l-none">
@@ -19,10 +19,11 @@ export default function TecTOC() {
 
           <div className="card-actions items-center justify-center md:justify-end">
             <a
-              href="/pages/capstone"
+              href="https://github.com/RCC-STUDIO/jawn-timetracker"
+              target="_blank"
               className="btn btn-outline my-1 xl:mx-2 w-full xl:w-1/4"
             >
-              Learn More
+              GitHub Repository
             </a>
           </div>
         </div>
